@@ -174,24 +174,23 @@ export default function HomePage() {
               className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
               <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-200">
-                🔧 Auckland's #1 Onsite Phone Repair Service
+                🔧  Auckland Device Repair Specialists
               </Badge>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight text-left">
                 <span className="text-blue-600">Fast & Reliable</span>
                 <br />
-                Phone Repairs
+                Device Repairs
                 <br />
-                <span className="text-purple-600">in Auckland</span>
+                <span className="text-purple-600">Done Right, Every Time</span>
               </h1>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-3xl">
-                Professional onsite phone repair services in Auckland. No need to leave your home or office - we bring the
-                repair shop to you!
+                Professional phone, tablet, and computer repairs in Auckland. Contact our experienced team for fast service, clear advice, and an upfront quote.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
-                  <a href="tel:0274152897">
+                  <a href="tel:0212703663">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call Now: 027 415 2897
+                    Call Now: 0212703663
                   </a>
                 </Button>
                 <Button
