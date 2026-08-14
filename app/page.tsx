@@ -181,7 +181,7 @@ export default function HomePage() {
                 <br />
                 Phone Repairs
                 <br />
-                <span className="text-purple-600">We Come To You!</span>
+                <span className="text-purple-600">in Auckland</span>
               </h1>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-3xl">
                 Professional onsite phone repair services in Auckland. No need to leave your home or office - we bring the
