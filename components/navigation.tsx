@@ -23,7 +23,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 ">
-            <img src="/fonefixer_logo.png" alt="Fone Fixer Logo" className="rounded-full w-16 h-14" />
+            <img src="/fonefixer_logo.png" alt="Fone Fixer Logo" className="h-10 w-auto object-contain" />
             <span className="text-xl font-bold text-gray-900">Fone Fixer</span>
           </Link>
 
