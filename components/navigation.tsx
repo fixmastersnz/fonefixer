@@ -42,10 +42,10 @@ export default function Navigation() {
 
           {/* Call Button */}
           <div className="hidden md:flex">
-            <a href="tel:0274152897" className="no-underline">
+            <a href="tel:021 270 3663" className="no-underline">
               <Button className="bg-blue-600 hover:bg-blue-700">
                 <Phone className="h-4 w-4 mr-2" />
-                027 415 2897
+                021 270 3663
               </Button>
             </a>
           </div>
@@ -71,7 +71,7 @@ export default function Navigation() {
                 ))}
                 <Button className="bg-blue-600 hover:bg-blue-700 mt-4">
                   <Phone className="h-4 w-4 mr-2" />
-                  027 415 2897
+                  021 270 3663
                 </Button>
               </div>
             </SheetContent>
