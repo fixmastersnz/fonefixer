@@ -188,9 +188,9 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
-                  <a href="tel:0212703663">
+                  <a href="tel:021 270 3663">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call Now: 0212703663
+                    Call Now: 021 270 3663
                   </a>
                 </Button>
                 <Button
