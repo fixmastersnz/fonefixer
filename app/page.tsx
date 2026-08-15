@@ -606,10 +606,10 @@ export default function HomePage() {
                 Auckland's premier onsite phone repair service. Fast, reliable, and affordable.
               </p>
               <div className="flex space-x-4">
-                <a href="tel:0274152897">
+                <a href="tel:021 270 3663">
                   <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                     <Phone className="h-4 w-4 mr-2" />
-                    027 415 2897
+                    021 270 3663
                   </Button>
                 </a>
               </div>
@@ -640,7 +640,7 @@ export default function HomePage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-              <li>027 415 2897</li>
+              <li>021 270 3663</li>
                 <li>fonefixernz@gmail.com</li>
                 <li>Auckland, New Zealand</li>
                 {/* <li>7 Days a Week</li> */}
