@@ -1,4 +1,5 @@
-// Email configuration and utility functions
+import { Resend } from 'resend';
+
 export interface EmailData {
   firstName: string;
   lastName: string;
@@ -12,52 +13,35 @@ export interface EmailData {
   address: string;
 }
 
-export const emailConfig = {
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true, // Uses SSL on port 465 instead of STARTTLS
-  auth: {
-    user: 'fonefixernz@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD
-  }
-};
-
-import nodemailer from 'nodemailer';
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (data: EmailData) => {
   try {
-    const transporter = nodemailer.createTransport(emailConfig);
-
-    const mailOptions = {
-      from: '"Fone Fixer" <fonefixernz@gmail.com>',
+    const response = await resend.emails.send({
+      from: 'FoneFixer <onboarding@resend.dev>',
       to: 'fonefixernz@gmail.com',
       subject: 'New Service Booking Request',
-      text: `
-New Service Booking Request
+      html: `
+        <h2>New Service Booking Request</h2>
+        <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
+        <p><strong>Phone:</strong> ${data.phone}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Device:</strong> ${data.deviceBrand} ${data.deviceModel}</p>
+        <p><strong>Issue:</strong> ${data.issueDescription}</p>
+        <p><strong>Preferred Date:</strong> ${data.serviceDate}</p>
+        <p><strong>Service Type:</strong> ${data.serviceType}</p>
+        <p><strong>Address:</strong> ${data.address}</p>
+      `,
+    });
 
-Customer Details:
-Name: ${data.firstName} ${data.lastName}
-Phone: ${data.phone}
-Email: ${data.email}
+    if (response.error) {
+      console.error('RESEND ERROR:', response.error);
+      return { success: false, message: response.error.message };
+    }
 
-Device Information:
-Brand: ${data.deviceBrand}
-Model: ${data.deviceModel}
-Issue Description: ${data.issueDescription}
-
-Service Details:
-Preferred Date: ${data.serviceDate}
-Service Type: ${data.serviceType}
-Address: ${data.address}
-
-This is a booking request from the Fone Fixer website.
-      `
-    };
-
-    await transporter.sendMail(mailOptions);
-    return { success: true, message: 'Email sent successfully' };
+    return { success: true };
   } catch (error) {
-    console.error('Email sending failed:', error);
-    return { success: false, message: 'Failed to send email' };
+    console.error('SEND EMAIL ERROR:', error);
+    return { success: false, message: String(error) };
   }
 };
