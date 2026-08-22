@@ -18,8 +18,8 @@ export const emailConfig = {
   port: 587,
   secure: false,
   auth: {
-    user: 'farhanrjcw389@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD || 'oymt efaz haej zhtu'
+    user: 'fonefixernz@gmail.com',
+    pass: process.env.GMAIL_APP_PASSWORD || 'quuj kfxh mlqo rrwv'
   }
 };
 
