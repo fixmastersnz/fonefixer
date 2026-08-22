@@ -19,7 +19,7 @@ export const emailConfig = {
   secure: false,
   auth: {
     user: 'fonefixernz@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD || 'qara yrnq cxcz sanb'
+    pass: process.env.GMAIL_APP_PASSWORD || 'grtkymufyksbhyjd'
   }
 };
 
@@ -30,29 +30,28 @@ export const sendEmail = async (data: EmailData) => {
     const transporter = nodemailer.createTransport(emailConfig);
 
     const mailOptions = {
-      from: '"Fone Fixer" <admin@fonefixer.co.nz>',
-      to: 'fonefixernz@gmail.com', // Change to desired recipient
+      from: '"Fone Fixer" <fonefixernz@gmail.com>',
+      to: 'fonefixernz@gmail.com',
       subject: 'New Service Booking Request',
       text: `
-        New Service Booking Request
+New Service Booking Request
 
-        Customer Details:
-        Name: ${data.firstName} ${data.lastName}
-        Phone: ${data.phone}
-        Email: ${data.email}
+Customer Details:
+Name: ${data.firstName} ${data.lastName}
+Phone: ${data.phone}
+Email: ${data.email}
 
-        Device Information:
-        Brand: ${data.deviceBrand}
-        Model: ${data.deviceModel}
-        Issue Description: ${data.issueDescription}
+Device Information:
+Brand: ${data.deviceBrand}
+Model: ${data.deviceModel}
+Issue Description: ${data.issueDescription}
 
-        Service Details:
-        Preferred Date: ${data.serviceDate}
-        Service Type: ${data.serviceType}
-        Address: ${data.address}
+Service Details:
+Preferred Date: ${data.serviceDate}
+Service Type: ${data.serviceType}
+Address: ${data.address}
 
-        This is a booking request from 
-        the Fone Fixer website.
+This is a booking request from the Fone Fixer website.
       `
     };
 
