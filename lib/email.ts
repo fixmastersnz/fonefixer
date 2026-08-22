@@ -13,10 +13,9 @@ export interface EmailData {
 }
 
 export const emailConfig = {
-  // Gmail SMTP Configuration
   host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true, // Uses SSL on port 465 instead of STARTTLS
   auth: {
     user: 'fonefixernz@gmail.com',
     pass: process.env.GMAIL_APP_PASSWORD
