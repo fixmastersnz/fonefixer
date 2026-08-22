@@ -19,7 +19,7 @@ export const emailConfig = {
   secure: false,
   auth: {
     user: 'fonefixernz@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD || 'quuj kfxh mlqo rrwv'
+    pass: process.env.GMAIL_APP_PASSWORD || 'qara yrnq cxcz sanb'
   }
 };
 
