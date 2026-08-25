@@ -225,7 +225,6 @@ export default function HomePage() {
             />
             {/* <div className="absolute inset-0 bg-white/30" /> */}
           </div>
-        </div>
       </section>
 
       {/* Problem Statement Section */}
