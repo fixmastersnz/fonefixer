@@ -63,7 +63,6 @@ export default function ServicesPage() {
         "macOS Installation",
       ],
       priceRange: "$89NZD - $299NZD",
-
       timeRange: "45-90 minutes",
       brands: ["MacBook Air", "MacBook Pro", "iMac", "Mac Mini"],
     },
@@ -91,37 +90,31 @@ export default function ServicesPage() {
       icon: Smartphone,
       issue: "Cracked Screen",
       solution: "Professional screen replacement with premium quality parts",
-      // price: "From $49",
     },
     {
       icon: Battery,
       issue: "Battery Drain",
       solution: "Battery replacement and optimization for extended life",
-      // price: "From $59",
     },
     {
       icon: Zap,
       issue: "Won't Charge",
       solution: "Charging port cleaning and replacement if needed",
-      // price: "From $39",
     },
     {
       icon: Camera,
       issue: "Camera Issues",
       solution: "Camera module replacement and software fixes",
-      // price: "From $69",
     },
     {
       icon: Speaker,
       issue: "No Sound",
       solution: "Speaker and audio component repair or replacement",
-      // price: "From $49",
     },
     {
       icon: Wifi,
       issue: "Connectivity Problems",
       solution: "Network troubleshooting and antenna repair",
-      // price: "From $59",
     },
   ]
 
@@ -157,7 +150,6 @@ export default function ServicesPage() {
       description: "Warranty provided on all repairs for your peace of mind",
     },
   ]
-  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -170,17 +162,20 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-20 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
           <div
-            className={`text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className={`text-center transition-all duration-1000 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
           >
-            <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-200">🔧 Professional Repair Services</Badge>
+            <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-200">
+              🔧 Professional Repair Services
+            </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="text-blue-600">Expert Device</span>
               <br />
               <span className="text-purple-600">Repair Services</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Professional onsite repair services for phones, laptops, and computers. We bring the expertise to your
-              doorstep!
+              Professional onsite repair services for phones, laptops, and computers. We bring the expertise to your doorstep!
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               <Phone className="mr-2 h-5 w-5" />
@@ -204,15 +199,19 @@ export default function ServicesPage() {
 
           <div className="space-y-12">
             {mainServices.map((service, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow" id={
-                service.title === "Mobile Phone Repairs"
-                  ? "mobile-phone-repairs"
-                  : service.title === "Mac Repairs"
-                  ? "mac-repairs"
-                  : service.title === "Windows Repairs"
-                  ? "windows-repairs"
-                  : undefined
-              }>
+              <Card
+                key={index}
+                className="overflow-hidden hover:shadow-xl transition-shadow"
+                id={
+                  service.title === "Mobile Phone Repairs"
+                    ? "mobile-phone-repairs"
+                    : service.title === "Mac Repairs"
+                    ? "mac-repairs"
+                    : service.title === "Windows Repairs"
+                    ? "windows-repairs"
+                    : undefined
+                }
+              >
                 <CardContent className="p-0">
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="p-8 lg:p-12">
@@ -303,7 +302,7 @@ export default function ServicesPage() {
               </Card>
             ))}
           </div>
-          {/* Add anchor targets for screen and battery replacements */}
+
           <div id="screen-replacements" style={{ position: 'relative', top: '-80px' }}></div>
           <div id="battery-replacements" style={{ position: 'relative', top: '-80px' }}></div>
         </div>
@@ -330,7 +329,6 @@ export default function ServicesPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-3">{issue.issue}</h3>
                   <p className="text-gray-600 mb-4">{issue.solution}</p>
-                  {/* <div className="text-2xl font-bold text-blue-600 mb-4">{issue.price}</div> */}
                   <Button variant="outline" size="sm" className="w-full bg-transparent">
                     Fix This Issue
                   </Button>
@@ -433,7 +431,7 @@ export default function ServicesPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-            <div className="flex items-center space-x-2 mb-4">
+              <div className="flex items-center space-x-2 mb-4">
                 <img src="/fonefixer_logo.png" alt="Fone Fixer Logo" className="rounded-full w-10 h-10" />
                 <h3 className="text-2xl font-bold">Fone Fixer</h3>
               </div>
@@ -445,7 +443,7 @@ export default function ServicesPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-300">
-              <li><a href="/services#mobile-phone-repairs">Mobile Phone Repairs</a></li>
+                <li><a href="/services#mobile-phone-repairs">Mobile Phone Repairs</a></li>
                 <li><a href="/services#mac-repairs">Mac Repairs</a></li>
                 <li><a href="/services#windows-repairs">Windows Repairs</a></li>
                 <li><a href="/services#screen-replacements">Screen Replacements</a></li>
@@ -466,7 +464,7 @@ export default function ServicesPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-              <li>0212703663</li>
+                <li>0212703663</li>
                 <li>fonefixernz@gmail.com</li>
                 <li>Auckland, New Zealand</li>
               </ul>
@@ -474,7 +472,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-          <p>Fone Fixer All Rights Reserved © 2024 | Powered by DigitronCX®</p>
+            <p>Fone Fixer All Rights Reserved © 2024 | Powered by DigitronCX®</p>
           </div>
         </div>
       </footer>
