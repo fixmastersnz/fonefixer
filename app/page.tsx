@@ -165,14 +165,17 @@ export default function HomePage() {
                 Professional phone, tablet, and computer repairs in Auckland. Contact our experienced team for fast service, clear advice, and an upfront quote.
               </p>
               <a
-                href="https://share.google/MZ5HZLCU25QechYSF"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors mb-6 group"
-              >
-                <MapPin className="h-5 w-5 text-blue-600 shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="underline-offset-4 group-hover:underline">20/170 Wairau Road, Wairau Valley, Auckland 0627</span>
-              </a>
+  href="https://share.google/MZ5HZLCU25QechYSF"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors mb-6 group"
+>
+  <MapPin className="h-5 w-5 text-blue-600 shrink-0 group-hover:scale-110 transition-transform" />
+  {/* Add font-bold and text-gray-900 below */}
+  <span className="font-bold text-gray-900 underline-offset-4 group-hover:underline">
+    20/170 Wairau Road, Wairau Valley, Auckland 0627
+  </span>
+</a>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
