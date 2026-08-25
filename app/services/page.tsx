@@ -157,6 +157,7 @@ export default function ServicesPage() {
       description: "Warranty provided on all repairs for your peace of mind",
     },
   ]
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
