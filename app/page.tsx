@@ -162,7 +162,7 @@ export default function HomePage() {
                 <span className="text-purple-600">Done Right, Every Time</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-800 mb-8 max-w-3xl">
-                Professional phone, tablet, and computer repairs in Auckland. Contact our experienced team for fast service, clear advice, and an upfront quote.
+                Professional phone, tablets, and computer repairs in Auckland. Contact our experienced team for fast service, clear advice, and an upfront quote.
               </p>
               <a
   href="https://share.google/MZ5HZLCU25QechYSF"
