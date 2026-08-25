@@ -186,6 +186,10 @@ export default function HomePage() {
               <p className="text-xl md:text-2xl text-black mb-8 max-w-3xl">
                 Professional phone, tablet, and computer repairs in Auckland. Contact our experienced team for fast service, clear advice, and an upfront quote.
               </p>
+              <div className="flex items-center gap-2 text-gray-600 mb-6">
+  <MapPin className="h-5 w-5 text-blue-600 shrink-0" />
+  <span>20/170 Wairau Road, Wairau Valley, Auckland 0627</span>
+</div>
               <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
                   <a href="tel:021 270 3663">
