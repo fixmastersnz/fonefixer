@@ -179,7 +179,7 @@ export default function ServicesPage() {
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               <Phone className="mr-2 h-5 w-5" />
-              Book Repair Now: 0212703663
+              Book Repair Now: 021 270 3663
             </Button>
           </div>
         </div>
@@ -412,7 +412,7 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
               <Phone className="mr-2 h-5 w-5" />
-              Call Now: 0212703663
+              Call Now: 021 270 3663
             </Button>
             <Button
               size="lg"
@@ -464,7 +464,7 @@ export default function ServicesPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>0212703663</li>
+                <li>021 270 3663</li>
                 <li>fonefixernz@gmail.com</li>
                 <li>Auckland, New Zealand</li>
               </ul>
