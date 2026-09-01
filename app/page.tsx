@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import Script from "next/script"
 import { format } from "date-fns"
 import {
   Smartphone,
@@ -10,7 +11,6 @@ import {
   Shield,
   DollarSign,
   MapPin,
-  Star,
   CheckCircle,
   Phone,
   CalendarIcon,
@@ -122,24 +122,6 @@ export default function HomePage() {
     { icon: DollarSign, title: "Affordable Pricing", description: "Unbeatable prices without compromising on quality" },
   ]
 
-  const testimonials = [
-    {
-      name: "Samuel Tu'itahi",
-      rating: 5,
-      text: "I'm never going anywhere else! UK was super friendly and fixed my phone on the spot in under 10 minutes. He used genuine parts and kept me in the loop the whole time. Highly recommend supporting this awesome local business.",
-    },
-    {
-      name: "Louie Edillor",
-      rating: 5,
-      text: "UK is very professional and he knows what he is doing. His rates are affordable as well. Fone Fixer will be our go-to from now on.",
-    },
-    {
-      name: "Ruma Miah",
-      rating: 5,
-      text: "Fantastic experience with FoneFixer. My phone screen was completely shattered and they repaired it quickly and professionally. Fast turnaround, fair prices, and top-quality service.",
-    },
-  ]
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <Navigation />
@@ -165,17 +147,16 @@ export default function HomePage() {
                 Professional phone, tablet, and computer repairs in Auckland. Contact our experienced team for fast service, clear advice, and an upfront quote.
               </p>
               <a
-  href="https://share.google/MZ5HZLCU25QechYSF"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors mb-6 group"
->
-  <MapPin className="h-5 w-5 text-blue-600 shrink-0 group-hover:scale-110 transition-transform" />
-  {/* Add font-bold and text-gray-900 below */}
-  <span className="font-bold text-gray-900 underline-offset-4 group-hover:underline">
-    20/170 Wairau Road, Wairau Valley, Auckland 0627
-  </span>
-</a>
+                href="https://share.google/MZ5HZLCU25QechYSF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors mb-6 group"
+              >
+                <MapPin className="h-5 w-5 text-blue-600 shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="font-bold text-gray-900 underline-offset-4 group-hover:underline">
+                  20/170 Wairau Road, Wairau Valley, Auckland 0627
+                </span>
+              </a>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
@@ -352,7 +333,7 @@ export default function HomePage() {
             </h2>
             <p className="text-xl text-gray-600">Hear directly from our satisfied local customers</p>
           </div>
-          
+
           <div id="featurable-2454c43f-9e39-4848-8583-72c1c07f7fdd" data-featurable-async />
           <Script src="https://featurable.com/assets/bundle.js" strategy="lazyOnload" />
         </div>
