@@ -346,27 +346,15 @@ export default function HomePage() {
       {/* Testimonials */}
       <section className="py-20 px-4 md:px-6 bg-blue-50">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               What Our <span className="text-blue-600">Customers Say</span>
             </h2>
             <p className="text-xl text-gray-600">Hear directly from our satisfied local customers</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-4 italic">&quot;{testimonial.text}&quot;</p>
-                  <div className="font-semibold text-gray-900">- {testimonial.name}</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
+          <div id="featurable-2454c43f-9e39-4848-8583-72c1c07f7fdd" data-featurable-async />
+          <Script src="https://featurable.com/assets/bundle.js" strategy="lazyOnload" />
         </div>
       </section>
 
