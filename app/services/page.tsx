@@ -436,7 +436,9 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold">Fone Fixer</h3>
               </div>
               <p className="text-gray-300 mb-4">
-                Auckland's premier onsite phone repair service. Fast, reliable, and affordable.
+                Auckland’s trusted phone & tech repair store.
+Visit us in-store for fast, professional repairs.
+Onsite repair available for selected services.
               </p>
             </div>
 
