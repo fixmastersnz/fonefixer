@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function WhatsAppFloat() {
-  const phoneNumber = "0274152897"
+  const phoneNumber = "64274152897"
   const message = "Hi! I'd like to book a phone repair service."
 
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\s/g, "")}?text=${encodeURIComponent(message)}`
