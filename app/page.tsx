@@ -116,7 +116,7 @@ export default function HomePage() {
   ]
 
   const features = [
-    { icon: MapPin, title: "Onsite Service", description: "We come to you - home, office, or anywhere in Auckland" },
+    { icon: MapPin, title: "Convenient Store Location", description: "Visit our Auckland repair store for professional device repairs without the hassle of waiting for an onsite technician." },
     { icon: Clock, title: "Fast Turnaround", description: "Most repairs completed within 30-60 minutes" },
     { icon: Shield, title: "Quality Guarantee", description: "High-quality parts with warranty on all repairs" },
     { icon: DollarSign, title: "Affordable Pricing", description: "Unbeatable prices without compromising on quality" },
