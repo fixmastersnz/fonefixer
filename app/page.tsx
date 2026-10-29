@@ -198,7 +198,7 @@ export default function HomePage() {
               Have a <span className="text-blue-600">Broken Screen?</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Don&apos;t let a damaged device slow you down. We fix it fast, right where you are!
+              Don&apos;t let a damaged device slow you down. Get your device fixed by our experts and get back to what matters most!
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
