@@ -87,8 +87,7 @@ export default function AboutPage() {
               <span className="text-purple-600">Experts in Auckland</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We're passionate about bringing your devices back to life with professional, convenient onsite repair
-              services that you can trust.
+              We're passionate about bringing your devices back to life with professional, reliable in-store repair services you can trust. Visit our store for expert repairs and get your devices working like new again!
             </p>
           </div>
         </div>
@@ -233,8 +232,8 @@ export default function AboutPage() {
                     <CheckCircle className="h-5 w-5 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Onsite Convenience</h3>
-                    <p className="text-gray-600">We come to you - no need to leave your home or office</p>
+                    <h3 className="text-xl font-bold mb-2">Convenient Store Visits</h3>
+                    <p className="text-gray-600">Visit our Auckland repair store for fast, professional device repairs.</p>
                   </div>
                 </div>
 
