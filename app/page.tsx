@@ -241,7 +241,7 @@ export default function HomePage() {
               Our <span className="text-blue-600">Expert Services</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Professional repair services for all your devices, delivered right to your doorstep
+              Professional phone repair services in Auckland. Visit our repair store for fast, reliable, and expert solutions for cracked screens, battery issues, charging problems, and more.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
