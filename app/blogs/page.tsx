@@ -107,7 +107,7 @@ export default function BlogsPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>027 415 2897</li>
+                <li>021 270 3663</li>
                 <li>fonefixernz@gmail.com</li>
                 <li>Auckland, New Zealand</li>
               </ul>
