@@ -126,8 +126,8 @@ export default function ServicesPage() {
     },
     {
       step: "2",
-      title: "We Come to You",
-      description: "Our technician arrives at your location with all necessary tools",
+      title: "Visit Our Store",
+      description: "Bring your device to our Auckland store for expert repairs using quality parts.",
     },
     {
       step: "3",
@@ -395,8 +395,8 @@ export default function ServicesPage() {
             </div>
             <div className="text-center">
               <CheckCircle className="h-12 w-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Onsite Convenience</h3>
-              <p className="opacity-90">We come to you - home, office, anywhere</p>
+              <h3 className="text-xl font-bold mb-2">Convenient Store Visits</h3>
+              <p className="opacity-90">Visit our Auckland repair store for fast, professional device repairs.</p>
             </div>
           </div>
         </div>
@@ -407,7 +407,7 @@ export default function ServicesPage() {
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Need Your Device Fixed Today?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Don't wait - book your onsite repair service now and get back to what matters most
+            Don’t wait—visit our Auckland repair store today for fast, reliable device repairs and get back to what matters most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
