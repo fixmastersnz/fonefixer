@@ -14,10 +14,9 @@ import {
   CalendarIcon,
   ArrowRight,
   Cpu,
-  HardDisk,
-  ShieldAlert,
   Wrench,
-  Laptop,
+  Smartphone,
+  ShieldAlert,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -95,8 +94,8 @@ export default function WindowsRepairsPage() {
     { icon: Cpu, title: "Hardware Upgrades", desc: "Improve compatible computers with suitable hardware upgrades." },
     { icon: Wrench, title: "Software Troubleshooting", desc: "Diagnose and resolve common Windows software issues and errors." },
     { icon: ShieldAlert, title: "Virus Removal", desc: "Get assistance removing malware and unwanted software safely." },
-    { icon: HardDisk, title: "Data Recovery", desc: "Explore options for recovering accessible data from a faulty or damaged storage device." },
-    { icon: Laptop, title: "Performance Optimisation", desc: "Address slow performance, clean up junk and improve system responsiveness." },
+    { icon: Smartphone, title: "Data Recovery", desc: "Explore options for recovering accessible data from a faulty or damaged storage device." },
+    { icon: Monitor, title: "Performance Optimisation", desc: "Address slow performance, clean up junk and improve system responsiveness." },
   ]
 
   const supportedBrands = ["Dell", "HP", "Lenovo", "ASUS", "Acer", "MSI"]
