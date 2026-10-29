@@ -292,7 +292,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
               <Phone className="mr-2 h-5 w-5" />
-              Call Now: 027 415 2897
+              Call Now: 021 270 3663
             </Button>
             <Button
               size="lg"
@@ -344,7 +344,7 @@ export default function AboutPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>027 415 2897</li>
+                <li>021 270 3663</li>
                 <li>fonefixernz@gmail.com</li>
                 <li>Auckland, New Zealand</li>
               </ul>
