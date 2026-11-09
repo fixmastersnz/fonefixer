@@ -122,7 +122,7 @@ export default function MacRepairsPage() {
             </p>
             <div className="bg-blue-100 border-l-4 border-blue-600 p-4 rounded-r-lg mb-8">
               <p className="text-blue-900 font-semibold text-lg">
-                Affordable Pricing: Repairs range from <span className="text-blue-700 font-bold">NZ$89 to NZ$299</span> depending on model & issue.
+                Affordable Pricing: Repairs range from <span className="text-blue-700 font-bold">NZ$89</span> depending on model & issue.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
