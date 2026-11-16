@@ -45,7 +45,7 @@ export default function ServicesPage() {
         "Water Damage Repair",
         "Software Troubleshooting",
       ],
-      priceRange:Starts from "$49NZD",
+      priceRange:"$49NZD",
       timeRange: "30-60 minutes",
       brands: ["iPhone", "Samsung", "Google", "Huawei", "OnePlus", "Xiaomi"],
     },
